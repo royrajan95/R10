@@ -2,7 +2,7 @@ import pymongo
 import os
 from helper.date import add_date
 DB_NAME = os.environ.get("DB_NAME", "cluster0")
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://WWW:WWW@cluster0.k8pdwev.mongodb.net/?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL", "mongodb://WWW:WWW@ac-5qhxq6h-shard-00-00.k8pdwev.mongodb.net:27017,ac-5qhxq6h-shard-00-01.k8pdwev.mongodb.net:27017,ac-5qhxq6h-shard-00-02.k8pdwev.mongodb.net:27017/?ssl=true&replicaSet=atlas-ur7kn3-shard-0&authSource=admin&retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]
