@@ -1,13 +1,13 @@
-version: "3.9"
+version: "3.3"
 services:
   workerdisk:
     build: .
     environment:
-      - API_ID=${API_ID}
-      - API_HASH=${HASH}
-      - TOKEN=${TOKEN}
-      - DB_NAME=${DB_NAME}
-      - DB_URL=${DB_URL}
-      - CHANNEL=${CHANNEL}
-      - ADMIN=${ADMIN}
-      - LAZY_PIC=${LAZY_PIC}
+      - API_ID= 5503927
+      - API_HASH= 6f3a051b5da7f5b499cde019d273fca1
+      - TOKEN= 5786986338:AAGwFOIESp1sdZ7BG9uVsJ-fMG7CMhzZazE
+      - DB_NAME= my
+      - DB_URL= mongodb+srv://WWW:WWW@cluster0.k8pdwev.mongodb.net/?retryWrites=true&w=majority
+      - CHANNEL= -1001893607937
+      - ADMIN= 773325066
+      - LAZY_PIC= https://telegra.ph/miles12-11-22
