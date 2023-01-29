@@ -3,8 +3,8 @@ import os
 from helper.date import add_date
 DB_NAME = os.environ.get("DB_NAME", "Rename")
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://ren:ren@rename.ic2ttzb.mongodb.net/?retryWrites=true&w=majority")
-mongo = pymongo.MongoClient(DB_URL)
-db = mongo[DB_NAME]
+mongo = pymongo.MongoClient("mongodb+srv://ren:ren@rename.ic2ttzb.mongodb.net/?retryWrites=true&w=majority")
+db = mongo["Rename"]
 dbcol = db["user"]
 
 # Total User
